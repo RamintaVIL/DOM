@@ -1,0 +1,22 @@
+.allInfo {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    border: 1px solid salmon;
+}
+.allInfo img {
+    width: 600px;
+    height: auto;
+    margin-right: 20px;
+}
+.apartment {
+    display: flex;
+    flex-direction: column;
+}
+.apartment h2 {
+    margin-top: 5px;
+}
+.apartment div {
+    margin-bottom: 5px;
+}

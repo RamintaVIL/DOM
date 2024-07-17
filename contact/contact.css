@@ -1,0 +1,43 @@
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body > div {
+    display: grid;
+    gap: 2rem;
+}
+header,
+main,
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+nav {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+nav > .link {
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    color: lightskyblue;
+    /* pasidarome permatoma borderi */
+    border-bottom: 0.2rem solid transparent;
+}
+nav > .link:hover {
+    border-bottom-color:lightskyblue;
+}
+nav > .link.active {
+    background-color:lightskyblue;
+    color: black;
+}
