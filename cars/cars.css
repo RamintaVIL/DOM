@@ -11,59 +11,43 @@ body {
         sans-serif;
     padding: 2rem;
 }
-.carsContainer {
+
+.card-container {
+    width: 100%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    align-items: center; 
+    justify-content: center;
 }
-.ulContainer {
-  position: relative;
-  margin: 20px 0;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  overflow: hidden;
+.card {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.car-item {
+    min-width: 75%;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
 }
 img {
     width: 100%;
-    height: auto;
+    height: 90%;
     display: block;
-    margin-bottom: 10px;
-}
-
-.carsContainer li {
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 5px 0;
 }
 .textOverly {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    bottom: 10px;
+    left: 10px;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
 }
-.textOverly1 {
-    position: absolute;
-    top: 100px;
-    right: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
+.textOverly:nth-child(2) {
+    bottom: 40px;
 }
-.textOverly3 {
-    position: absolute;
-    top: 150px;
-    right: 50px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
+.textOverly:nth-child(3) {
+    bottom: 70px;
 }
